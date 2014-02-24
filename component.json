@@ -1,0 +1,24 @@
+{
+  "name": "mythhub",
+  "repo": "jonathanKingston/mythhub",
+  "description": "A playground for using myth.io in browser",
+  "version": "0.0.1",
+  "keywords": ["Myth", "CSS", "demo"],
+  "dependencies": {
+    "segmentio/myth": "0.3.0",
+    "jonathanKingston/resetify": "0.0.3"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "init.js",
+  "scripts": [
+    "init.js",
+    "index.js"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "images": [
+    "images/myth-white.svg"
+  ]
+}
