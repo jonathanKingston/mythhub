@@ -30,5 +30,5 @@ textarea:focus, textarea:active {
   outline: 0;
 }
 #to {
-  background: #eee url(images/myth-white.svg) 95% 10px no-repeat;
+  background: #eee url(./images/myth-white.svg) 95% 10px no-repeat;
 }
