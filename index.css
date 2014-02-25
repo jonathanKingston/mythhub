@@ -19,7 +19,7 @@ html, body {
 }
 textarea {
   height: 100%;
-  width: 50%;
+  width: 49%;
   float: left;
   padding: 1em;
   box-sizing: border-box;
@@ -30,5 +30,6 @@ textarea:focus, textarea:active {
   outline: 0;
 }
 #to {
-  background: #eee url(./images/myth-white.svg) 95% 10px no-repeat;
+  float: right;
+  background: #eee url(images/myth-white.svg) 95% 10px no-repeat;
 }

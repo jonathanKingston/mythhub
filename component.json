@@ -12,8 +12,7 @@
   "license": "MIT",
   "main": "init.js",
   "scripts": [
-    "init.js",
-    "index.js"
+    "init.js"
   ],
   "styles": [
     "index.css"

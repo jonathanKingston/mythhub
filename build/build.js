@@ -12759,32 +12759,30 @@ module.exports=require(78)
 });
 
 require.register("mythhub/init.js", function(exports, require, module){
-var myth = require('myth');
-var fromTextElement = document.getElementById('from');
-var toTextElement = document.getElementById('to');
-var errorElement = document.getElementById('error');
+module.exports = function () {
+  var myth = require('myth');
+  var fromTextElement = document.getElementById('from');
+  var toTextElement = document.getElementById('to');
+  var errorElement = document.getElementById('error');
 
-function updateCSS() {
-  var css = fromTextElement.value;
-  errorElement.innerHTML = '';
-  errorElement.className = 'hidden';
-  var converted = toTextElement.value;
-  try {
-    converted = myth(css);
-  } catch(e) {
-    errorElement.className = '';
-    errorElement.innerHTML = e.toString();
+  function updateCSS() {
+    var css = fromTextElement.value;
+    errorElement.innerHTML = '';
+    errorElement.className = 'hidden';
+    var converted = toTextElement.value;
+    try {
+      converted = myth(css);
+    } catch(e) {
+      errorElement.className = '';
+      errorElement.innerHTML = e.toString();
+    }
+    toTextElement.value = converted.trim();
   }
-  toTextElement.value = converted;
-}
 
-fromTextElement.addEventListener('change', updateCSS);
-fromTextElement.addEventListener('keyup', updateCSS);
-updateCSS();
-
-});
-require.register("mythhub/index.js", function(exports, require, module){
-module.exports = '<!DOCTYPE html>\n<html>\n  <head>\n    <title>MythHub - demo Myth.io</title>\n    <link rel="stylesheet" href="build/build.css" />\n  </head>\n  <body>\n    <div id="error">\n    </div>\n    <textarea id="from" >\n      :root {\n        var-green: #a6c776;\n      }\n\n      a {\n        color: var(green);\n        font-variant: all-small-caps;\n        transition: color 1s;\n      }\n\n      a:hover {\n        color: color(var(green) shade(20%));\n      }\n\n      ::placeholder {\n        opacity: .4;\n        transition: opacity 1s;\n      }\n\n      :focus::placeholder {\n        opacity: .2;\n      }\n    </textarea>\n    <textarea id="to"></textarea>\n    <script src="build/build.js"></script>\n    <script>require(\'mythhub\');</script>\n  </body>\n</html>';
+  fromTextElement.addEventListener('change', updateCSS);
+  fromTextElement.addEventListener('keyup', updateCSS);
+  updateCSS();
+};
 });
 
 
