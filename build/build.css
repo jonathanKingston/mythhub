@@ -183,12 +183,14 @@ html, body {
   clear: both;
   color: rgb(252, 3, 3);
   float: none;
-  height: 1em;
   position: fixed;
   padding: 1em;
-  width: 100%;
   margin-top: 0.5em;
   background-color: rgb(255, 247, 213);
+  right: 49%;
+  width: 18%;
+//  display: block;
+  clear: both;
 }
 .hidden {
   display: none;

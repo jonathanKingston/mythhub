@@ -7,31 +7,31 @@
   <body>
     <div id="error">
     </div>
-    <textarea id="from" >
-      :root {
-        var-green: #a6c776;
-      }
+    <textarea id="from" spellcheck="false" >
+:root {
+  var-green: #a6c776;
+}
 
-      a {
-        color: var(green);
-        font-variant: all-small-caps;
-        transition: color 1s;
-      }
+a {
+  color: var(green);
+  font-variant: all-small-caps;
+  transition: color 1s;
+}
 
-      a:hover {
-        color: color(var(green) shade(20%));
-      }
+a:hover {
+  color: color(var(green) shade(20%));
+}
 
-      ::placeholder {
-        opacity: .4;
-        transition: opacity 1s;
-      }
+::placeholder {
+  opacity: .4;
+  transition: opacity 1s;
+}
 
-      :focus::placeholder {
-        opacity: .2;
-      }
+:focus::placeholder {
+  opacity: .2;
+}
     </textarea>
-    <textarea id="to"></textarea>
+    <textarea id="to" spellcheck="false" ></textarea>
     <script src="build/build.js"></script>
     <script>require('mythhub')();</script>
   </body>
