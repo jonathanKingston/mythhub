@@ -1,0 +1,210 @@
+/*
+  Resetify.css v0.1
+  © Jonathan Kingston MIT License
+  http://jonathankingston.co.uk/
+*/
+/*
+  Root element
+*/
+html,
+/*
+  Sections
+*/
+body,article,section,nav,aside,
+h1,h2,h3,h4,h5,h6,
+header,footer,address,
+
+/*
+ Grouping content
+ Missing:
+   hr
+*/
+p,hr,pre,blockquote,ol,
+ul,li,dl,dt,dd,figure,
+figcaption,div,main,
+
+/*
+  Text level semantics
+  Missing:
+  a
+*/
+em,strong,small,
+s,cite,q,dfn,
+abbr,data,time,code,
+var,samp,kbd,sub,
+sup,i,b,u,
+mark,ruby,rb,rt,
+rtc,rp,bdi,bdo,
+span,br,wbr,
+
+/*
+  Edits
+*/
+ins,del,
+
+/*
+  Embedable content
+*/
+img,iframe,embed,object,
+param,video,audio,
+map,area,
+math,svg,
+
+/*
+  Tabular data
+*/
+table,caption,
+colgroup,col,tbody,thead,tfoot,tr,td,th,
+
+/*
+  Forms
+  Missing:
+  input,button,select,textarea
+*/
+form,label,
+optgroup,option,
+keygen,output,
+progress,meter,
+fieldset,legend,
+
+/*
+  Interactive elements
+*/
+details,summary,
+dialog,
+
+/*
+  Scripting elements
+*/
+canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*
+  menuitem,menu not present due to lack of browser support
+*/
+
+/* set display block for older non HTML5 browsers */
+article,section,nav,aside
+header,footer,address,
+output,
+details,summary,
+figure,figcaption,main,
+video,audio,
+canvas,
+/* Also set the hr as block */
+hr {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/*
+  Consider element deprecation:
+  dialog, details, summary, output
+*/
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000; 
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333;
+  margin:1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  font-family: Consolas,Monaco,'Andale Mono',monospace;
+}
+#error {
+  clear: both;
+  color: rgb(252, 3, 3);
+  float: none;
+  height: 1em;
+  position: fixed;
+  padding: 1em;
+  width: 100%;
+  margin-top: 0.5em;
+  background-color: rgb(255, 247, 213);
+}
+.hidden {
+  display: none;
+}
+textarea {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 0 none;
+}
+textarea:focus, textarea:active {
+  border: 0 none;
+  outline: 0;
+}
+#to {
+  background: #eee url("mythhub/images/myth-white.svg") 95% 10px no-repeat;
+}
