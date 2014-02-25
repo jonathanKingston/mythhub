@@ -3,15 +3,14 @@
 
   A playground for using myth.io in browser
 
+
+  [Demo site](http://jonathankingston.github.io/mythhub)
+
 ## Installation
 
   Install with [component(1)](http://component.io):
 
     $ component install jonathanKingston/mythhub
-
-## API
-
-
 
 ## License
 
