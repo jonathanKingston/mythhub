@@ -3263,7 +3263,6 @@ module.exports = function(css, options){
     if ('/' != css.charAt(0) || '*' != css.charAt(1)) return;
 
     var i = 2;
-
     while (null != css.charAt(i) && ('*' != css.charAt(i) || '/' != css.charAt(i + 1))) ++i;
     i += 2;
 
@@ -11684,10 +11683,7 @@ module.exports = function(css, options){
     if ('/' != css.charAt(0) || '*' != css.charAt(1)) return;
 
     var i = 2;
-
-    while ('' !== css.charAt(i + 1) && ('*' != css.charAt(i) || '/' != css.charAt(i + 1))) ++i;
-
-    if () throw 
+    while (null != css.charAt(i) && ('*' != css.charAt(i) || '/' != css.charAt(i + 1))) ++i;
     i += 2;
 
     var str = css.slice(2, i - 2);
