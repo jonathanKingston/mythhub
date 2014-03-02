@@ -18,7 +18,9 @@ module.exports = function () {
     toTextElement.value = converted.trim();
   }
 
-  fromTextElement.addEventListener('change', updateCSS);
-  fromTextElement.addEventListener('keyup', updateCSS);
-  updateCSS();
+  if (null !== fromTextElement) {
+    fromTextElement.addEventListener('change', updateCSS);
+    fromTextElement.addEventListener('keyup', updateCSS);
+    updateCSS();
+  }
 };
