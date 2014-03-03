@@ -12780,7 +12780,7 @@ module.exports = function () {
 
     for(var i = 0; i < valuesArray.length; i++){
       var keyValArray = valuesArray[i].split('=');
-      values[keyValArray[0]] = keyValArray[1];
+      values[keyValArray[0]] = keyValArray[1].replace(/\+/g, ' ');
     }
 
     return values;
