@@ -5,7 +5,7 @@
   "version": "0.0.2",
   "keywords": ["Myth", "CSS", "demo"],
   "dependencies": {
-    "segmentio/myth": "0.3.0",
+    "segmentio/myth": "0.3.3",
     "jonathanKingston/resetify": "0.0.3"
   },
   "development": {},
