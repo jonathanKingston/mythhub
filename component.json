@@ -2,10 +2,10 @@
   "name": "mythhub",
   "repo": "jonathanKingston/mythhub",
   "description": "A playground for using myth.io in browser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": ["Myth", "CSS", "demo"],
   "dependencies": {
-    "segmentio/myth": "0.3.3",
+    "segmentio/myth": "1.0.4",
     "jonathanKingston/resetify": "0.0.3"
   },
   "development": {},
